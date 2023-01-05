@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<script src="../cdn-cgi/apps/head/Z3efjb67emcS6xEAbYfgYJMej1w.js"></script><script>(function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+'use strict';var g=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}},l=this||self,m=/^[\w+/_-]+[=]{0,2}$/,p=null,q=function(){},r=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";
+if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},u=function(a,b){function c(){}c.prototype=b.prototype;a.prototype=new c;a.prototype.constructor=a};var v=function(a,b){Object.defineProperty(l,a,{configurable:!1,get:function(){return b},set:q})};var y=function(a,b){this.b=a===w&&b||"";this.a=x},x={},w={};var aa=function(a,b){a.src=b instanceof y&&b.constructor===y&&b.a===x?b.b:"type_error:TrustedResourceUrl";if(null===p)b:{b=l.document;if((b=b.querySelector&&b.querySelector("script[nonce]"))&&(b=b.nonce||b.getAttribute("nonce"))&&m.test(b)){p=b;break b}p=""}b=p;b&&a.setAttribute("nonce",b)};var z=function(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^+new Date).toString(36)};var A=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)},B=function(a){this.a=a||l.document||document};B.prototype.appendChild=function(a,b){a.appendChild(b)};var C=function(a,b,c,d,e,f){try{var k=a.a,h=A(a.a,"SCRIPT");h.async=!0;aa(h,b);k.head.appendChild(h);h.addEventListener("load",function(){e();d&&k.head.removeChild(h)});h.addEventListener("error",function(){0<c?C(a,b,c-1,d,e,f):(d&&k.head.removeChild(h),f())})}catch(n){f()}};var ba=l.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ca=l.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),da=l.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu"),ea=function(a,b,c){this.b=a;this.f=new B(this.b);this.a=null;this.c=[];this.g=!1;this.i=b;this.h=c},F=function(a){if(a.b.body&&!a.g){var b=
+function(){D(a);l.setTimeout(function(){return E(a,3)},50)};C(a.f,a.i,2,!0,function(){l[a.h]||b()},b);a.g=!0}},D=function(a){for(var b=G(1,5),c=0;c<b;c++){var d=H(a);a.b.body.appendChild(d);a.c.push(d)}b=H(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=G(100,110).toString()+"%";b.style.zIndex=G(2147483544,2147483644).toString();b.style["background-color"]=I(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=I(0,10,0,10,0,10);b.style.display=
+"flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=H(a);c.style.width=G(80,85).toString()+"%";c.style.maxWidth=G(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=A(a.f.a,"IMG");d.className=z();d.src=ba;d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=H(a),f=H(a);f.style["font-weight"]="bold";f.textContent=ca;var k=H(a);k.textContent=da;J(a,
+e,f);J(a,e,k);J(a,c,d);J(a,c,e);J(a,b,c);a.a=b;a.b.body.appendChild(a.a);b=G(1,5);for(c=0;c<b;c++)d=H(a),a.b.body.appendChild(d),a.c.push(d)},J=function(a,b,c){for(var d=G(1,5),e=0;e<d;e++){var f=H(a);b.appendChild(f)}b.appendChild(c);c=G(1,5);for(d=0;d<c;d++)e=H(a),b.appendChild(e)},G=function(a,b){return Math.floor(a+Math.random()*(b-a))},I=function(a,b,c,d,e,f){return"rgb("+G(Math.max(a,0),Math.min(b,255)).toString()+","+G(Math.max(c,0),Math.min(d,255)).toString()+","+G(Math.max(e,0),Math.min(f,
+255)).toString()+")"},H=function(a){a=A(a.f.a,"DIV");a.className=z();return a},E=function(a,b){0>=b||null!=a.a&&0!=a.a.offsetHeight&&0!=a.a.offsetWidth||(fa(a),D(a),l.setTimeout(function(){return E(a,b-1)},50))},fa=function(a){var b=a.c;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=c?c.call(b):{next:g(b)};for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.c=[];(b=a.a)&&b.parentNode&&b.parentNode.removeChild(b);a.a=null};var ia=function(a,b,c,d,e){var f=ha(c),k=function(n){n.appendChild(f);l.setTimeout(function(){f?(0!==f.offsetHeight&&0!==f.offsetWidth?b():a(),f.parentNode&&f.parentNode.removeChild(f)):a()},d)},h=function(n){document.body?k(document.body):0<n?l.setTimeout(function(){h(n-1)},e):b()};h(3)},ha=function(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};var K={},L=null;var M=function(){},N="function"==typeof Uint8Array,O=function(a,b){a.b=null;b||(b=[]);a.j=void 0;a.f=-1;a.a=b;a:{if(b=a.a.length){--b;var c=a.a[b];if(!(null===c||"object"!=typeof c||Array.isArray(c)||N&&c instanceof Uint8Array)){a.g=b-a.f;a.c=c;break a}}a.g=Number.MAX_VALUE}a.i={}},P=[],Q=function(a,b){if(b<a.g){b+=a.f;var c=a.a[b];return c===P?a.a[b]=[]:c}if(a.c)return c=a.c[b],c===P?a.c[b]=[]:c},R=function(a,b,c){a.b||(a.b={});if(!a.b[c]){var d=Q(a,c);d&&(a.b[c]=new b(d))}return a.b[c]};
+M.prototype.h=N?function(){var a=Uint8Array.prototype.toJSON;Uint8Array.prototype.toJSON=function(){var b;void 0===b&&(b=0);if(!L){L={};for(var c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),d=["+/=","%2b/index.html","-_=","-_.","-_"],e=0;5>e;e++){var f=c.concat(d[e].split(""));K[e]=f;for(var k=0;k<f.length;k++){var h=f[k];void 0===L[h]&&(L[h]=k)}}}b=K[b];c=[];for(d=0;d<this.length;d+=3){var n=this[d],t=(e=d+1<this.length)?this[d+1]:0;h=(f=d+2<this.length)?this[d+2]:0;k=n>>2;n=(n&
+3)<<4|t>>4;t=(t&15)<<2|h>>6;h&=63;f||(h=64,e||(t=64));c.push(b[k],b[n],b[t]||"",b[h]||"")}return c.join("")};try{return JSON.stringify(this.a&&this.a,S)}finally{Uint8Array.prototype.toJSON=a}}:function(){return JSON.stringify(this.a&&this.a,S)};var S=function(a,b){return"number"!==typeof b||!isNaN(b)&&Infinity!==b&&-Infinity!==b?b:String(b)};M.prototype.toString=function(){return this.a.toString()};var T=function(a){O(this,a)};u(T,M);var U=function(a){O(this,a)};u(U,M);var ja=function(a,b){this.c=new B(a);var c=R(b,T,5);c=new y(w,Q(c,4)||"");this.b=new ea(a,c,Q(b,4));this.a=b},ka=function(a,b,c,d){b=new T(b?JSON.parse(b):null);b=new y(w,Q(b,4)||"");C(a.c,b,3,!1,c,function(){ia(function(){F(a.b);d(!1)},function(){d(!0)},Q(a.a,2),Q(a.a,3),Q(a.a,1))})};var la=function(a,b){V(a,"internal_api_load_with_sb",function(c,d,e){ka(b,c,d,e)});V(a,"internal_api_sb",function(){F(b.b)})},V=function(a,b,c){a=l.btoa(a+b);v(a,c)},W=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];e=l.btoa(a+b);e=l[e];if("function"==r(e))e.apply(null,d);else throw Error("API not exported.");};var X=function(a){O(this,a)};u(X,M);var Y=function(a){this.h=window;this.a=a;this.b=Q(this.a,1);this.f=R(this.a,T,2);this.g=R(this.a,U,3);this.c=!1};Y.prototype.start=function(){ma();var a=new ja(this.h.document,this.g);la(this.b,a);na(this)};
+var ma=function(){var a=function(){if(!l.frames.googlefcPresent)if(document.body){var b=document.createElement("iframe");b.style.display="none";b.style.width="0px";b.style.height="0px";b.style.border="none";b.style.zIndex="-1000";b.style.left="-1000px";b.style.top="-1000px";b.name="googlefcPresent";document.body.appendChild(b)}else l.setTimeout(a,5)};a()},na=function(a){var b=Date.now();W(a.b,"internal_api_load_with_sb",a.f.h(),function(){var c;var d=a.b,e=l[l.btoa(d+"loader_js")];if(e){e=l.atob(e);
+e=parseInt(e,10);d=l.btoa(d+"loader_js").split(".");var f=l;d[0]in f||"undefined"==typeof f.execScript||f.execScript("var "+d[0]);for(;d.length&&(c=d.shift());)d.length?f[c]&&f[c]!==Object.prototype[c]?f=f[c]:f=f[c]={}:f[c]=null;c=Math.abs(b-e);c=1728E5>c?0:c}else c=-1;0!=c&&(W(a.b,"internal_api_sb"),Z(a,Q(a.a,6)))},function(c){Z(a,c?Q(a.a,4):Q(a.a,5))})},Z=function(a,b){a.c||(a.c=!0,a=new l.XMLHttpRequest,a.open("GET.html",b,!0),a.send())};(function(a,b){l[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];l[a]=q;b.apply(null,d)}})("__d3lUW8vwsKlB__",function(a){"function"==typeof window.atob&&(a=window.atob(a),a=new X(a?JSON.parse(a):null),(new Y(a)).start())});}).call(this);
+
+window.__d3lUW8vwsKlB__("WyI3MTliNDIyNzM5MDNhZGVjIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2YvQUdTS1d4VTVJTnB0LVBib09BTE5FRlFoMWZIamJnNzBVM3JXNjUzTl9Vd1JBeEJONVdSVFpJR21HUGpyb2RUckZJTEtwVmZQYnFOWlRCd21Yc1dIOHliSG9za1x1MDAzZCJdCixbMjAsImRpdi1ncHQtYWQiLDEwMCwiTnpFNVlqUXlNamN6T1RBellXUmxZd1x1MDAzZFx1MDAzZCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL3d3dy5nc3RhdGljLmNvbS8wZW1uL2YvcC83MTliNDIyNzM5MDNhZGVjLmpzP3VzcXBcdTAwM2RDQkUiXQpdCiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hYRXdzcDhFeFMtU2FwUmlhUDdobGczckY1NFd3TVdGSkJCUGljNWF2SXNfQ2xyRGxPdmtRZl9xUy1vYjZtMHZncXA5WXhTWmV4TU5IM0EzOWVEP2FiXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2wvQUdTS1d4V1d6d3F3TzdidWRxeUVWbHlSSXYyTjY3SGJRaFhQNG1zM09jYTBiM05fclFPcnF4cGJvUW1tZU9LaUJtTTc1RU0xbnlmbWE1Uzk3Rk0xLU5ZaD9hYlx1MDAzZDJcdTAwMjZzYmZcdTAwM2QxIiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hVbmF3NlF6NEJZTDlzT1NTN1lSR05SaVNMcndId3AxQVE2dW1meVhndDhMcktRamhNYXVGTURQcjZsOVdBaElYU0pIQzZEdEpmaGFsMFZfR0diP3NiZlx1MDAzZDIiXQo=");</script>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/fde0c.txt?client=ca-pub-6959712947574390" crossorigin="anonymous"></script><meta charset="utf-8">
+<title>Starting Screen | WhatsApp Khater</title>
+<link href="kaynaklar/css/bootstrap.css" rel="stylesheet">
+<link href="kaynaklar/css/main.css" rel="stylesheet">
+<link href="kaynaklar/css/responsive.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="../favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../favicon-128.png" sizes="128x128">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="1/khater_dosyalar/css/dildegistir.css">
+<style>
+.responsive-ad-wrapper,
+.responsive-ad {
+  display:inline-block;
+  width: 320px;
+  height: 100px;
+}
+@media screen and (min-width: 800px) {
+  .responsive-ad-wrapper,
+  .responsive-ad {
+    display: none;
+  }
+}
+</style>
+<style>
+.aero_mobil_dilsecim,
+.aero_mobil_dil {
+  display:inline-block;
+  padding-bottom: 30px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  
+}
+@media screen and (min-width: 768px) {
+  .aero_mobil_dilsecim,
+  .aero_mobil_dil {
+    display: none;
+  }
+}
+</style>
+<style>
+.aero_masaustu_dilsecim,
+.aero_masaustu_dil {
+  display: none;
+  
+}
+@media screen and (min-width: 769px) {
+  .aero_masaustu_dilsecim,
+  .aero_masaustu_dil {
+    display: inline-block;
+	width: -webkit-fill-available;
+	height: -webkit-fill-available;
+  }
+}
+</style>
+<style>
+hr {
+  border: 1px solid #777777;
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+<div class="preloader"></div>
+<section class="featured-section" id="featured">
+<div class="auto-container">
+<div class="row clearfix">
+  <div class="content-column col-lg-5 col-md-12 col-sm-12">
+<div class="iner-column">
+<div class="sec-title">
+<div class="title"><span>WP</span>
+You decide. </div>
+<h2>Please select the <span>package</span> name you want to install.</h2>
+<br>
+<p style="color: #B53471;">⚪ <strong>If you want to use WhatsApp Khater for the first time and have not been able to decide on the package name that best suits you, then <a href="../../blog/aero-clone-unclone-packages/index9ed2.html?lang=en">click here!</a></strong></p>
+<br>
+<p style="color: #5f27cd;">⚪ <strong>If you already use WhatsApp Khater and don&#39;t know how to update your WhatsApp Khater, <a href="../../blog/how-to-update-whatsapp-aero/index9ed2.html?lang=en">click here</a> to learn instantly.</strong></p>
+<br>
+<p>Languages of the website: <br><a href="#dil_secim">(<i>English, Arabic</i>)</a></p>
+</div>
+</div>
+</div>
+<div class="blocks-column col-lg-7 col-md-12 col-sm-12">
+<center id="dil_secim">
+<div class="aero_mobil_dilsecim">
+<header id="header" class="alt">
+<font color="#fff" size="6"><strong>Change Language</strong></font><br><br>
+<font color="#fff"><select id='select_lang' onchange='change_lang(this.value)'>
+<option value="" selected>Choose a Language | English</option>
+<option value="en">English</option>
+<option value="ar">Arabic</option></font>
+</select>
+</header>
+</div>
+</center>
+<div class="inner-column">
+<div class="row clearfix">
+
+
+  <div class="featured-block titlt style-three col-lg-6 col-md-6 col-sm-12" data-tilt data-tilt-max="8">
+<div class="inner-box">
+<div class="icon-box">
+<span class="icon flaticon-protection-shield-with-a-check-mark"></span>
+</div>
+<h3>com.whatsapp</h3> <div class="text">
+This package is the best choice in terms of stability . <br> <b style="color: #eb4d4b;">(If you choose this package, you must delete the official WhatsApp application)</b> </div>
+<br>
+<a href="package/whatsapp/index9ed.html?lang=en" class="theme-btn btn-style-three"><span class="txt">That&#39;s it!</span></a>
+</div>
+<div class="responsive-ad-wrapper">
+<div align="center">
+</div>
+</div> </div>
+
+
+<div class="featured-block titlt style-three col-lg-6 col-md-6 col-sm-12" data-tilt data-tilt-max="8">
+<div class="inner-box">
+<div class="icon-box">
+<span class="icon flaticon-protection-shield-with-a-check-mark"></span>
+</div>
+<h3>Other Packages</h3> <div class="text">
+  If you choose these packages, you do not need to delete the WhatsApp application.  <br> <b style="color: #eb4d4b;">( all these packages can be installed together.)</b> </div>
+  <br>
+<a href="package/index9ed2.html?lang=en" class="theme-btn btn-style-three"><span class="txt">That&#39;s it!</span></a>
+</div>
+<div class="responsive-ad-wrapper">
+<div align="center">
+</div>
+</div> </div>
+
+
+<section class="pb-90" id="dil_secim">
+<div class="aero_masaustu_dilsecim">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="price-nav-wrap">
+</div>
+<header id="header" class="alt">
+<font color="#fff" size="6"><strong>Change Language</strong></font><br><br>
+<font color="#fff"><select id='select_lang' onchange='change_lang(this.value)'>
+<option value="" selected>Choose a Language | English</option>
+<option value="en">English</option>
+<option value="ar">Arabic</option>
+</select>
+</header>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<script>
+				function change_lang(value){
+					window.location.replace("?lang="+value);
+				}
+			</script>
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+<script src="kaynaklar/js/jquery.js"></script>
+<script src="kaynaklar/js/script.js"></script>
+<script src="kaynaklar/js/tilt.jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.css" /><script src="../../cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f0edff","text":"#000000","border":"#5e65c2"},"button":{"background":"#5e65c2","text":"#ffffff"}},"position":"bottom","border":"thin","corners":"large","padding":"small","margin":"small","fontsize":"small","content":{"href":"https://yonlendir.whatsaero.com/page/cookies-policy","message":"This website uses cookies to ensure you get the best experience on our website.","link":"Learn more","button":"Got it!"}})});</script></body>
+
+</html>
