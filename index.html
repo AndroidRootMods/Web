@@ -5,56 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* إضافة CSS خاص بالشات */
+        /* تخصيص CSS */
         df-messenger {
-          --df-messenger-bot-message-color: #002f6c;
-          --df-messenger-button-titlebar-color: #002f6c;
-          --df-messenger-chat-background-color: #f5f5f5;
-          --df-messenger-font-color: #002f6c;
-          --df-messenger-send-icon: url('https://www.example.com/send-icon.png');
+            --df-messenger-button-titlebar-color: #008CBA;
+            --df-messenger-font-color: #333333;
+            --df-messenger-send-icon: url('https://www.example.com/send-icon.png');
+            --df-messenger-user-message-background: #008CBA;
+            --df-messenger-user-message-color: #ffffff;
         }
     </style>
 </head>
 <body>
     <!-- إنشاء شات Dialogflow Messenger -->
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger chat-title="Chat with the Assistant" agent-id="cfd27e16-678e-4ff1-b16b-99820c489817" language-code="en">
-      <!-- إضافة رموز تعبيرية -->
-      <df-messenger-chat-icon>
-        😀
-      </df-messenger-chat-icon>
-      <!-- إضافة روابط وصور -->
-      <df-messenger-webview height="tall">
-        <df-messenger-webview-title>
-          Example Website
-        </df-messenger-webview-title>
-        <df-messenger-webview-navigation url="https://www.example.com">
-          Example Website
-        </df-messenger-webview-navigation>
-        <df-messenger-webview-close>
-          <img src="https://www.example.com/close-icon.png">
-        </df-messenger-webview-close>
-      </df-messenger-webview>
-      <!-- إضافة أزرار للاختيار من بينها -->
-      <df-messenger-button-template>
-        <df-messenger-button url="https://www.example.com/link1">
-          Example Button 1
-        </df-messenger-button>
-        <df-messenger-button url="https://www.example.com/link2">
-          Example Button 2
-        </df-messenger-button>
-      </df-messenger-button-template>
-    </df-messenger>
+    <df-messenger chat-title="My Chatbot" agent-id="12345" language-code="en">
+        <!-- إضافة رسالة ترحيبية -->
+        <df-messenger-chat
+            intent="WELCOME"
+            message="Welcome to my chatbot. How can I help you today?"
+        ></df-messenger-chat>
 
-    <!-- إضافة رسالة ترحيبية -->
-    <script>
-        // إنشاء صندوق نصي ترحيبي
-        window.addEventListener('DOMContentLoaded', () => {
-          const messenger = document.querySelector('df-messenger');
-          messenger.addEventListener('df-messenger-loaded', () => {
-            messenger.renderCustomText('مرحبًا بك في الشات، كيف يمكنني مساعدتك؟');
-          });
-        });
-    </script>
+        <!-- إضافة رسائل إجابة -->
+        <df-messenger-chat
+            intent="FAQ"
+            message="Here is the answer to your question"
+        ></df-messenger-chat>
+
+        <!-- إضافة إجراءات المستخدم -->
+        <df-messenger-chat
+            intent="ACTION"
+            action="redirect"
+            url="https://www.example.com"
+            message="Redirecting you to the webpage"
+        ></df-messenger-chat>
+
+        <!-- إضافة الأوامر الصوتية -->
+        <df-messenger-speech
+            intent="VOICE_COMMAND"
+            message="You said something"
+        ></df-messenger-speech>
+
+        <!-- تخصيص الرسائل والألوان والأيقونات -->
+        <df-messenger-card
+            title="My Card Title"
+            subtitle="My Card Subtitle"
+            image-url="https://www.example.com/image.png"
+            buttons='[{"text":"Button 1","postback":"Button 1"},{"text":"Button 2","postback":"Button 2"}]'
+        ></df-messenger-card>
+
+        <df-messenger-image src="https://www.example.com/image.png"></df-messenger-image>
+
+        <df-messenger-list>
+            <df-messenger-list-item
+                title="My List Title"
+                subtitle="My List Subtitle"
+                image-url="https://www.example.com/image.png"
+                info='[{"key":"Button","value":"https://www.example.com"}]'
+            ></df-messenger-list-item>
+        </df-messenger-list>
+
+       </df-messenger>
 </body>
 </html>
