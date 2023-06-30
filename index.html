@@ -1,69 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dialogflow Messenger Demo</title>
+    <title>My Dialogflow Messenger Chatbot</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* تخصيص CSS */
         df-messenger {
+            --df-messenger-bot-message-color: #333;
             --df-messenger-button-titlebar-color: #008CBA;
-            --df-messenger-font-color: #333333;
+            --df-messenger-chat-background-color: #f5f5f5;
+            --df-messenger-font-color: #333;
             --df-messenger-send-icon: url('https://www.example.com/send-icon.png');
-            --df-messenger-user-message-background: #008CBA;
-            --df-messenger-user-message-color: #ffffff;
+            --df-messenger-user-message-background-color: #008CBA;
+            --df-messenger-user-message-color: #fff;
         }
     </style>
 </head>
 <body>
-    <!-- إنشاء شات Dialogflow Messenger -->
+    <df-messenger
+        intent="WELCOME"
+        chat-title="My Chatbot"
+        agent-id="cfd27e16-678e-4ff1-b16b-99820c489817"
+        language-code="en"
+    ></df-messenger>
+
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger chat-title="My Chatbot" agent-id="cfd27e16-678e-4ff1-b16b-99820c489817" language-code="en">
-        <!-- إضافة رسالة ترحيبية -->
-        <df-messenger-chat
-            intent="WELCOME"
-            message="Welcome to my chatbot. How can I help you today?"
-        ></df-messenger-chat>
-
-        <!-- إضافة رسائل إجابة -->
-        <df-messenger-chat
-            intent="FAQ"
-            message="Here is the answer to your question"
-        ></df-messenger-chat>
-
-        <!-- إضافة إجراءات المستخدم -->
-        <df-messenger-chat
-            intent="ACTION"
-            action="redirect"
-            url="https://www.example.com"
-            message="Redirecting you to the webpage"
-        ></df-messenger-chat>
-
-        <!-- إضافة الأوامر الصوتية -->
-        <df-messenger-speech
-            intent="VOICE_COMMAND"
-            message="You said something"
-        ></df-messenger-speech>
-
-        <!-- تخصيص الرسائل والألوان والأيقونات -->
-        <df-messenger-card
-            title="My Card Title"
-            subtitle="My Card Subtitle"
-            image-url="https://www.example.com/image.png"
-            buttons='[{"text":"Button 1","postback":"Button 1"},{"text":"Button 2","postback":"Button 2"}]'
-        ></df-messenger-card>
-
-        <df-messenger-image src="https://www.example.com/image.png"></df-messenger-image>
-
-        <df-messenger-list>
-            <df-messenger-list-item
-                title="My List Title"
-                subtitle="My List Subtitle"
-                image-url="https://www.example.com/image.png"
-                info='[{"key":"Button","value":"https://www.example.com"}]'
-            ></df-messenger-list-item>
-        </df-messenger-list>
-
-       </df-messenger>
 </body>
 </html>
