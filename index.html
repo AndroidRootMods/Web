@@ -18,33 +18,7 @@
 <body>
     <!-- إنشاء شات Dialogflow Messenger -->
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger chat-title="Chat with the Assistant" agent-id="small-talk-ieal" language-code="en">
-      <!-- إضافة رموز تعبيرية -->
-      <df-messenger-chat-icon>
-        😀
-      </df-messenger-chat-icon>
-      <!-- إضافة روابط وصور -->
-      <df-messenger-webview height="tall">
-        <df-messenger-webview-title>
-          Example Website
-        </df-messenger-webview-title>
-        <df-messenger-webview-navigation url="https://www.example.com">
-          Example Website
-        </df-messenger-webview-navigation>
-        <df-messenger-webview-close>
-          <img src="https://www.example.com/close-icon.png">
-        </df-messenger-webview-close>
-      </df-messenger-webview>
-      <!-- إضافة أزرار للاختيار من بينها -->
-      <df-messenger-button-template>
-        <df-messenger-button url="https://www.example.com/link1">
-          Example Button 1
-        </df-messenger-button>
-        <df-messenger-button url="https://www.example.com/link2">
-          Example Button 2
-        </df-messenger-button>
-      </df-messenger-button-template>
-    </df-messenger>
+    <df-messenger chat-title="Elsayed Khater" agent-id="cfd27e16-678e-4ff1-b16b-99820c489817" language-code="en"></df-messenger>
 
     <!-- إضافة رسالة ترحيبية -->
     <script>
@@ -52,7 +26,7 @@
         window.addEventListener('DOMContentLoaded', () => {
           const messenger = document.querySelector('df-messenger');
           messenger.addEventListener('df-messenger-loaded', () => {
-            messenger.renderCustomText('مرحبًا بك في الشات، كيف يمكنني مساعدتك؟');
+            messenger.renderCustomText('مرحبًا بك في شات السيد خاطر كيف يمكنني مساعدتك؟');
           });
         });
     </script>
