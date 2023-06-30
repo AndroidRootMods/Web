@@ -4,22 +4,41 @@
     <title>Dialogflow Messenger Demo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
     <!-- إنشاء شات Dialogflow Messenger -->
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger chat-title="Elsayed Khater" agent-id="cfd27e16-678e-4ff1-b16b-99820c489817" language-code="en"></df-messenger>
 
-    <!-- إضافة رسالة ترحيبية -->
+    <!-- إضافة كود التحقق من تحميل الملفات بنجاح -->
     <script>
-        // إنشاء صندوق نصي ترحيبي
-        window.addEventListener('DOMContentLoaded', () => {
-          const messenger = document.querySelector('df-messenger');
-          messenger.addEventListener('df-messenger-loaded', () => {
-            messenger.renderCustomText('مرحبًا بك في شات السيد خاطر كيف يمكنني مساعدتك؟');
-          });
+        // تحقق من تحميل ملفات الشات بنجاح
+        window.addEventListener('dfMessengerLoaded', () => {
+            console.log('تم تحميل ملفات الشات بنجاح');
         });
+
+        // تحقق من تحميل Web Components Polyfills بنجاح
+        var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+        if (raf) {
+            raf(() => {
+                window.setTimeout(() => {
+                    if (window.customElements) {
+                        console.log('تم تحميل Web Components Polyfills بنجاح');
+                    } else {
+                        console.error('فشل تحميل Web Components Polyfills');
+                    }
+                }, 0);
+            });
+        } else {
+            window.addEventListener('load', () => {
+                if (window.customElements) {
+                    console.log('تم تحميل Web Components Polyfills بنجاح');
+                } else {
+                    console.error('فشل تحميل Web Components Polyfills');
+                }
+            });
+        }
     </script>
 </body>
 </html>
