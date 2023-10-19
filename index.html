@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>عرض ملف PDF</title>
+  <title>Elsayed Khater</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    #pdf-container {
+      width: 100%;
+      height: 100%;
+    }
+    
+    #pdf-object {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-  <embed src="Elsayed-Khater.pdf" width="500" height="600" type="application/pdf">
+  <div id="pdf-container">
+    <embed id="pdf-object" src="Elsayed-Khater.pdf" type="application/pdf">
+  </div>
 </body>
 </html>
